@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Profile | CampusCare
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="profile">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">
+            C
+          </span>
+          CampusCare
+        </a>
+        <nav id="site-nav">
+        </nav>
+      </div>
+    </header>
+    <main class="section">
+      <div class="container">
+        <div class="form-card">
+          <span class="eyebrow" id="role-label">
+          </span>
+          <h1 id="profile-heading">
+            Profile
+          </h1>
+          <div class="meta-list">
+            <p>
+              <span>
+                Account ID:
+              </span>
+              <span id="profile-id">
+              </span>
+            </p>
+            <p>
+              Email is your account identifier and cannot be changed in this demonstration.
+            </p>
+          </div>
+          <div id="message" class="message" hidden>
+          </div>
+          <form id="profile-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="profile-name">
+                  Full name
+                </label>
+                <input id="profile-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="profile-email">
+                  Email address
+                </label>
+                <input id="profile-email" name="email" type="email" readonly>
+              </div>
+              <div class="form-group">
+                <label for="profile-phone">
+                  Phone number
+                </label>
+                <input id="profile-phone" name="phone" type="tel" pattern="[0-9+ -]{7,20}" required>
+              </div>
+            </div>
+            <div id="professional-fields" class="form-grid" hidden>
+              <div class="form-group">
+                <label>
+                  Specialisation
+                </label>
+                <input name="specialisation" required>
+              </div>
+              <div class="form-group">
+                <label>
+                  Qualification
+                </label>
+                <input name="qualification" required>
+              </div>
+              <div class="form-group full">
+                <label>
+                  Professional description
+                </label>
+                <textarea name="description" required>
+                </textarea>
+              </div>
+            </div>
+            <button class="button" type="submit">
+              Save changes
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container copyright">
+        CampusCare — CSE326 demonstration project.
+      </div>
+    </footer>
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>
