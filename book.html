@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Book Appointment | CampusCare
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="book">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">
+            C
+          </span>
+          CampusCare
+        </a>
+        <nav id="site-nav">
+        </nav>
+      </div>
+    </header>
+    <main class="section">
+      <div class="container">
+        <div class="form-card">
+          <span class="eyebrow">
+            Student booking
+          </span>
+          <h1>
+            Request an appointment
+          </h1>
+          <p class="form-note">
+            Your request will be sent to the selected counsellor for approval. A rejected or cancelled request releases the time slot.
+          </p>
+          <div id="message" class="message" hidden>
+          </div>
+          <form id="booking-form">
+            <div class="form-grid">
+              <div class="form-group full">
+                <label for="counsellor">
+                  Select counsellor
+                </label>
+                <select id="counsellor" name="counsellorId" required>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="appointment-date">
+                  Appointment date
+                </label>
+                <input id="appointment-date" name="date" type="date" required>
+              </div>
+              <div class="form-group">
+                <label for="appointment-time">
+                  Appointment time
+                </label>
+                <input id="appointment-time" name="time" type="time" min="09:00" max="17:00" required>
+              </div>
+              <div class="form-group">
+                <label for="category">
+                  Counselling category
+                </label>
+                <select id="category" name="category" required>
+                  <option value="">
+                    Choose a category
+                  </option>
+                  <option>
+                    Stress and anxiety
+                  </option>
+                  <option>
+                    Academic pressure
+                  </option>
+                  <option>
+                    Personal growth
+                  </option>
+                  <option>
+                    Relationships
+                  </option>
+                  <option>
+                    Career concerns
+                  </option>
+                  <option>
+                    Other
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>
+                  Session mode
+                </label>
+                <div class="radio-row">
+                  <label>
+                    <input type="radio" name="mode" value="Online" required>
+                    Online
+                  </label>
+                  <label>
+                    <input type="radio" name="mode" value="Offline" required>
+                    Offline
+                  </label>
+                </div>
+              </div>
+              <div class="form-group full">
+                <label for="additional-message">
+                  Additional message (optional)
+                </label>
+                <textarea id="additional-message" name="message" placeholder="Share anything that may help the counsellor prepare.">
+                </textarea>
+              </div>
+            </div>
+            <button class="button" type="submit">
+              Send Appointment Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>
