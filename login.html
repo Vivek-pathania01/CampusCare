@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Login | CampusCare
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="login">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">
+            C
+          </span>
+          CampusCare
+        </a>
+        <nav id="site-nav">
+        </nav>
+      </div>
+    </header>
+    <main class="auth-page">
+      <div class="auth-shell">
+        <div class="auth-head">
+          <span class="eyebrow">
+            CampusCare account
+          </span>
+          <h1>
+            Welcome
+          </h1>
+          <p class="subtle">
+            Choose your role and sign in or create an account.
+          </p>
+        </div>
+        <div class="role-switch">
+          <button class="switch-button" data-role="student">
+            Student
+          </button>
+          <button class="switch-button" data-role="counsellor">
+            Counsellor
+          </button>
+        </div>
+        <div class="mode-switch">
+          <button class="switch-button" data-mode="login">
+            Login
+          </button>
+          <button class="switch-button" data-mode="signup">
+            Sign Up
+          </button>
+        </div>
+        <div id="message" class="message" hidden>
+        </div>
+        <form id="student-login" class="auth-form" data-role="student" data-mode="login">
+          <div class="form-group">
+            <label for="sl-email">
+              Email address
+            </label>
+            <input id="sl-email" name="email" type="email" required>
+          </div>
+          <div class="form-group">
+            <label for="sl-password">
+              Password
+            </label>
+            <div class="password-wrap">
+              <input id="sl-password" name="password" type="password" required>
+              <button class="password-toggle" data-target="sl-password" type="button">
+                Show
+              </button>
+            </div>
+          </div>
+          <button class="button" type="submit">
+            Login as Student
+          </button>
+        </form>
+        <form id="counsellor-login" class="auth-form" data-role="counsellor" data-mode="login" hidden>
+          <div class="form-group">
+            <label for="cl-email">
+              Email address
+            </label>
+            <input id="cl-email" name="email" type="email" required>
+          </div>
+          <div class="form-group">
+            <label for="cl-password">
+              Password
+            </label>
+            <div class="password-wrap">
+              <input id="cl-password" name="password" type="password" required>
+              <button class="password-toggle" data-target="cl-password" type="button">
+                Show
+              </button>
+            </div>
+          </div>
+          <button class="button" type="submit">
+            Login as Counsellor
+          </button>
+        </form>
+        <form id="student-signup" class="auth-form" data-role="student" data-mode="signup" hidden>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>
+                Full name
+              </label>
+              <input name="name" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Email address
+              </label>
+              <input name="email" type="email" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Phone number
+              </label>
+              <input name="phone" type="tel" pattern="[0-9+ -]{7,20}" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Password
+              </label>
+              <div class="password-wrap">
+                <input id="ss-password" name="password" type="password" required>
+                <button class="password-toggle" data-target="ss-password" type="button">
+                  Show
+                </button>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>
+                Confirm password
+              </label>
+              <input name="confirmPassword" type="password" required>
+            </div>
+          </div>
+          <button class="button" type="submit">
+            Create Student Account
+          </button>
+        </form>
+        <form id="counsellor-signup" class="auth-form" data-role="counsellor" data-mode="signup" hidden>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>
+                Full name
+              </label>
+              <input name="name" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Email address
+              </label>
+              <input name="email" type="email" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Phone number
+              </label>
+              <input name="phone" type="tel" pattern="[0-9+ -]{7,20}" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Specialisation
+              </label>
+              <input name="specialisation" placeholder="e.g. Stress management" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Qualification
+              </label>
+              <input name="qualification" placeholder="e.g. M.A. Psychology" required>
+            </div>
+            <div class="form-group">
+              <label>
+                Password
+              </label>
+              <div class="password-wrap">
+                <input id="cs-password" name="password" type="password" required>
+                <button class="password-toggle" data-target="cs-password" type="button">
+                  Show
+                </button>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label>
+                Professional description
+              </label>
+              <textarea name="description" required>
+              </textarea>
+            </div>
+            <div class="form-group full">
+              <label>
+                Confirm password
+              </label>
+              <input name="confirmPassword" type="password" required>
+            </div>
+          </div>
+          <button class="button" type="submit">
+            Create Counsellor Account
+          </button>
+        </form>
+      </div>
+    </main>
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>
